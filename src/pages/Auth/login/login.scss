@@ -1,0 +1,35 @@
+page-login {
+.mainDiv{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50% );
+    transform: translate(-50%,-50%);
+    width: 60%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 2px 5px #888888;
+}
+.leftCard{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: map-get($colors,primary);
+    border-radius: 20px 0 0 20px;
+}
+.rightCard{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+ion-input{
+    border-bottom : 1px solid map-get($colors,primary);
+}
+.darkBg{
+    background: #f7f7f7;
+}
+.content{
+    background: white;
+}
+.mainText{
+    margin-bottom: 50px;
+}
+}

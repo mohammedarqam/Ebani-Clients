@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item no-lines class="content">
+    <button ion-button clear item-start icon-only large>
+      <ion-icon name="ios-analytics"></ion-icon>
+    </button>
+    <h1 class="title" ion-text text-uppercase>DASHBOARD</h1>
+  </ion-item>
+
+
+
+  <ion-grid>
+    <ion-row>
+
+
+      <ion-col col-12 col-md-2>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6>
+                <button ion-button large class="iconic" icon-only>
+                  <ion-icon name="ios-people"></ion-icon>
+                </button>
+              </ion-col>
+              <ion-col col-6>
+                <ion-card-content float-right>
+                  <h3 class="tites">Clients</h3>
+                  <h1 class="nums">{{numClients}}</h1>
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+
+      <!-- <ion-col col-12 col-md-2>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6>
+                <button ion-button large class="iconic" icon-only>
+                  <ion-icon name="ios-people"></ion-icon>
+                </button>
+              </ion-col>
+              <ion-col col-6>
+                <ion-card-content float-right>
+                  <h3 class="tites">Clients</h3>
+                  <h1 class="nums">25</h1>
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-col> -->
+
+
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+</ion-content>

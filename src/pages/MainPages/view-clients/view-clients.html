@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item no-lines class="content">
+    <button ion-button clear item-start icon-only large>
+      <ion-icon name="ios-people"></ion-icon>
+    </button>
+    <h1 class="title" ion-text text-uppercase>clients</h1>
+  </ion-item>
+  <button ion-button float-right (click)="gtAddClient()">
+    <ion-icon padding-right name="md-add"></ion-icon>
+    Add Client
+  </button>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3 *ngFor="let c of mainArr">
+        <ion-card>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-4>
+                <img [src]="c.Logo" width="100%;"  [alt]="c.Name" />
+              </ion-col>
+              <ion-col col-8>
+                <ion-card-content text-right float-right>
+                  <ion-card-title>{{c.Name}}</ion-card-title>
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
+            <ion-item class="cardFoot">
+              <button ion-button clear float-right (click)="gtClientDetails(c)">Details</button>
+            </ion-item>
+          </ion-grid>
+
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
